@@ -1,0 +1,105 @@
+header {
+    padding: 20px 0 0 0;
+    text-align: center;
+    background-color: #543311;
+}
+.navct {
+    color: white;
+    padding-top: 5px;
+    text-transform: uppercase;
+   
+}
+
+.navct a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+ul {
+    list-style: none;
+}
+.submenu {
+    position: relative;
+    top: 10px;
+    padding-left: 80rem;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    color: rgb(48, 38, 38);
+    top: 100%;
+    z-index: 1;
+    background-color: #d4c6c6fa;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.vacio {
+    padding: 10px;
+    background-color: rgb(93, 33, 46);
+    text-align: center;
+    border-radius: 10px;
+    color:rgb(223, 200, 200);
+}
+
+#vaciar-carrito{
+    border-color: rgb(48, 38, 38);
+    color: black;
+}
+
+#lista-cafe .row {
+    margin-bottom: 20px;
+}
+.agregar-carrito {
+    margin: 10px 0;
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #0d4496;
+    display: flex;
+    width: 46%;
+    height: 350px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
